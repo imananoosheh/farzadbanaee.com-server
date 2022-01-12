@@ -1,0 +1,39 @@
+GET http://localhost:3001/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW1BbiIsImlhdCI6MTYzNzA4NjYzMiwiZXhwIjoxNjM3MDg2NjYyfQ.BnodQhL_4PsFaVMgPYEQbWQpQy5zFVxZbIUnpgjNY9g
+###
+DELETE http://localhost:3002/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW1BbiIsImlhdCI6MTYzNzA4ODQ0NX0.B1zgq939Lh3jCgVNrFN3RKDY7VMAsOIQnTgEL5bAATU"
+}
+###
+POST http://localhost:3002/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW1BbiIsImlhdCI6MTYzNzA4ODYzNywiZXhwIjoxNjM3MDg4NjY3fQ.jNdQrzEGslXbuuQ5l980VTAt7jVwt9Jn8VKyYYWoVOU"
+}
+###
+POST http://localhost:3002/login
+Content-Type: application/json
+
+{
+    "username": "ImAn"
+}
+###
+POST http://localhost:3002/register
+Content-Type: application/json
+
+{
+    "username": "iman",
+    "password": "anoosheh"
+}
+###
+POST http://localhost:3002/verify
+Content-Type: application/json
+
+{
+    "username": "iman",
+    "password": "anoosheh"
+}
